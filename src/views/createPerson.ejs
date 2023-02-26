@@ -10,14 +10,14 @@
 
 <body>
     <form action="/" method="post" enctype="multipart/form-data">
-        <input type="text" placeholder="nombre">
-        <input type="text" placeholder="apellido">
-        <input type="text" placeholder="correo">
+        <input type="text" placeholder="nombre" name="first_name">
+        <input type="text" placeholder="apellido" name="last_name">
+        <input type="text" placeholder="correo" name="email">
         <select name="gender" id="">
             <option value="Male">Male</option>
             <option value="Female">Female</option>
         </select>
-        <input type="file" accept=".png" name="avatar" id="">
+        <input type="file" name="avatarFile" id="">
         <button type="submit">Enviar</button>
     </form>
 </body>

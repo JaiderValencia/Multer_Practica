@@ -21,6 +21,18 @@ const controller = {
         res.render("createPerson");
     },
     create: (req, res) => {
+        const personToPush = {
+            first_name: req.body.first_name,
+            last_name: req.body.last_name,
+            email: req.body.email,
+            gender: req.body.gender,
+            avatar: req.body.avatar
+        }
+
+        peopleConvert.push(personToPush);
+
+        fs.writeFileSync(peoplePath, JSON.stringify(peopleConvert, null, 2));
+        
         res.redirect("/");
     }
 };

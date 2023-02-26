@@ -1,42 +1,43 @@
 [
-    {
-        "id": 1,
-        "first_name": "Blake",
-        "last_name": "Hutsby",
-        "email": "bhutsby0@independent.co.uk",
-        "gender": "Female",
-        "avatar": "http://dummyimage.com/231x181.png/dddddd/000000"
-    },
-    {
-        "id": 2,
-        "first_name": "Christian",
-        "last_name": "Koubu",
-        "email": "ckoubu1@nyu.edu",
-        "gender": "Male",
-        "avatar": "http://dummyimage.com/160x213.png/dddddd/000000"
-    },
-    {
-        "id": 3,
-        "first_name": "Paco",
-        "last_name": "Valencia",
-        "email": "pvalencia2@nature.com",
-        "gender": "Male",
-        "avatar": "http://dummyimage.com/159x151.png/cc0000/ffffff"
-    },
-    {
-        "id": 4,
-        "first_name": "Coriss",
-        "last_name": "Dorrian",
-        "email": "cdorrian3@china.com.cn",
-        "gender": "Female",
-        "avatar": "http://dummyimage.com/222x151.png/ff4444/ffffff"
-    },
-    {
-        "id": 5,
-        "first_name": "Allan",
-        "last_name": "Niemetz",
-        "email": "aniemetz4@baidu.com",
-        "gender": "Male",
-        "avatar": "http://dummyimage.com/129x116.png/dddddd/000000"
-    }
+  {
+    "id": 1,
+    "first_name": "Blake",
+    "last_name": "Hutsby",
+    "email": "bhutsby0@independent.co.uk",
+    "gender": "Female",
+    "avatar": "http://dummyimage.com/231x181.png/dddddd/000000"
+  },
+  {
+    "id": 2,
+    "first_name": "Christian",
+    "last_name": "Koubu",
+    "email": "ckoubu1@nyu.edu",
+    "gender": "Male",
+    "avatar": "http://dummyimage.com/160x213.png/dddddd/000000"
+  },
+  {
+    "id": 3,
+    "first_name": "Paco",
+    "last_name": "Valencia",
+    "email": "pvalencia2@nature.com",
+    "gender": "Male",
+    "avatar": "http://dummyimage.com/159x151.png/cc0000/ffffff"
+  },
+  {
+    "id": 4,
+    "first_name": "Coriss",
+    "last_name": "Dorrian",
+    "email": "cdorrian3@china.com.cn",
+    "gender": "Female",
+    "avatar": "http://dummyimage.com/222x151.png/ff4444/ffffff"
+  },
+  {
+    "id": 5,
+    "first_name": "Allan",
+    "last_name": "Niemetz",
+    "email": "aniemetz4@baidu.com",
+    "gender": "Male",
+    "avatar": "http://dummyimage.com/129x116.png/dddddd/000000"
+  },
+  {}
 ]
