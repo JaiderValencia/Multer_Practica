@@ -21,7 +21,7 @@ const controller = {
         res.render("createPerson");
     },
     create: (req, res) => {
-        res.redirect("index");
+        res.redirect("/");
     }
 };
 
