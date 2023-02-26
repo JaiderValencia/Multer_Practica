@@ -1,5 +1,6 @@
 // external modules
 const express = require("express");
+const multer = require("multer");
 
 // import controller
 const mainController = require("../controllers/mainController");
