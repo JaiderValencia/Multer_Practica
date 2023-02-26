@@ -10,6 +10,8 @@ const router = express.Router();
 
 // routes
 router.get("/", mainController.index);
+router.get("/create", mainController.createForm);
+router.post("/", mainController.create);
 
 // export routes
 module.exports = router;

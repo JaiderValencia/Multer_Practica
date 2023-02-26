@@ -16,6 +16,12 @@ const peopleConvert = JSON.parse(people);
 const controller = {
     index: (req, res) => {
         res.render("index", { people: peopleConvert });
+    },
+    createForm: (req, res) => {
+        res.render("createPerson");
+    },
+    create: (req, res) => {
+        res.redirect("index");
     }
 };
 
