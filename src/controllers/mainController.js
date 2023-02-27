@@ -9,7 +9,7 @@ const peopleConvert = JSON.parse(people);
 
 const controller = {
     index: (req, res) => {
-        res.render("index", { people: peopleConvert})
+        res.render("index", { people: peopleConvert })
     },
     createForm: (req, res) => {
         res.render("createPerson");
@@ -20,7 +20,7 @@ const controller = {
             last_name: req.body.last_name,
             email: req.body.email,
             gender: req.body.gender,
-            
+            avatar: req.file.filename
         }
 
         peopleConvert.push(personToPush);

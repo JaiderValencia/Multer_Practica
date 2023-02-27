@@ -38,5 +38,12 @@
     "email": "aniemetz4@baidu.com",
     "gender": "Male",
     "avatar": "http://dummyimage.com/129x116.png/dddddd/000000"
-  }  
+  },
+  {
+    "first_name": "Yo",
+    "last_name": "Test",
+    "email": "efdmsalfkm2l3",
+    "gender": "Female",
+    "avatar": "avatar1677476279901.png"
+  }
 ]

@@ -10,6 +10,10 @@ const path = require("path");
 //express instance
 const app = express();
 
+// public
+const publicPath = path.join(__dirname, "/public")
+app.use(express.static(publicPath));
+
 
 // port
 const port = process.env.PORT || 3000;

@@ -8,13 +8,13 @@ const path = require("path");
 // multer config
 const storage = multer.diskStorage({
     destination: (req, file, cb) => {
-        const destinationPath = path.join(__dirname, "../data/avatar-images");
+        const destinationPath = path.join(__dirname, "../public/avatar-images");
 
         cb(null, destinationPath);
     },
     filename: (req, file, cb) => {
         const fileName = "avatar" + Date.now() + path.extname(file.originalname);
-        
+
         cb(null, fileName);
     }
 });
