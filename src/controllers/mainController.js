@@ -1,21 +1,15 @@
-// natives modules
-const fs = require("fs");
+// native modules
+const fs = require("fs")
 const path = require("path");
 
-
-// data path
-const peoplePath = path.join(__dirname, "../data/people.json");
-
-
-// data import and convert
-const people = fs.readFileSync(peoplePath);
+// import and convert the data
+const dataPath = path.join(__dirname, "../data/people.json");
+const people = fs.readFileSync(dataPath);
 const peopleConvert = JSON.parse(people);
 
-
-// controller
 const controller = {
     index: (req, res) => {
-        res.render("index", { people: peopleConvert });
+        res.render("index", { people: peopleConvert})
     },
     createForm: (req, res) => {
         res.render("createPerson");
@@ -26,17 +20,15 @@ const controller = {
             last_name: req.body.last_name,
             email: req.body.email,
             gender: req.body.gender,
-            avatar: req.body.avatar
+            
         }
 
         peopleConvert.push(personToPush);
 
-        fs.writeFileSync(peoplePath, JSON.stringify(peopleConvert, null, 2));
-        
-        res.redirect("/");
+        fs.writeFileSync(dataPath, JSON.stringify(peopleConvert, null, 2));
+
+        res.redirect("/")
     }
 };
 
-
-// export controller
 module.exports = controller;

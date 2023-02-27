@@ -5,28 +5,32 @@ const multer = require("multer");
 // natives modules
 const path = require("path");
 
-// import controller
-const mainController = require("../controllers/mainController");
-
-// express instance
-const router = express.Router();
-
-// multer
+// multer config
 const storage = multer.diskStorage({
     destination: (req, file, cb) => {
-        cb(null, path.join(__dirname, "../data/avatar-images"));
+        const destinationPath = path.join(__dirname, "../data/avatar-images");
+
+        cb(null, destinationPath);
     },
     filename: (req, file, cb) => {
-        console.log(file);
+        const fileName = "avatar" + Date.now() + path.extname(file.originalname);
+        
+        cb(null, fileName);
     }
 });
 
-const upload = multer({ storage })
+const upload = multer({ storage });
+
+
+// instace express
+const router = express.Router();
+
+// import controllers
+const mainController = require("../controllers/mainController")
 
 // routes
 router.get("/", mainController.index);
 router.get("/create", mainController.createForm);
-router.post("/", mainController.create);
+router.post("/", upload.single("avatar"), mainController.create);
 
-// export routes
-module.exports = router;
+module.exports = router
